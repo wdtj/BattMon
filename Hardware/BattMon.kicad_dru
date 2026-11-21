@@ -1,0 +1,7 @@
+(version 1)
+# DKRed published maximum drill is 6.22 mm. Project minimum is deliberately 0.30 mm.
+(rule "DKRed drill range with BattMon margin"
+ (constraint hole_size (min 0.30mm) (max 6.22mm)))
+# Conservative check on plated pad/via annular ring; report undersized imported footprints.
+(rule "BattMon plated annular ring"
+ (constraint annular_width (min 0.10mm)))

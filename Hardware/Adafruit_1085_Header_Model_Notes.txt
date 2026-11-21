@@ -1,0 +1,7 @@
+Adafruit 1085 / ADS1115 breakout with 2.6 mm header strips
+
+Uses existing official Adafruit_1085.step model from BattMon. Adds two generic 1x6 male headers, 2.54 mm pitch, 12.70 mm row spacing, 0.64 mm square pins. Plastic height 2.60 mm, as supplied by user. Plastic rests on carrier top (z=0); breakout underside z=2.60 mm; breakout top z=4.17 mm. Assumed generic pin lengths: 6 mm below plastic into/through BattMon, 3 mm above plastic through breakout. Actual pin lengths were not supplied and should be checked. Female sockets not included.
+
+Model coordinates align with existing BattMon:Adafruit_1085_STEMMA_QT footprint. KiCad offset/rotation zero, scale 1. Existing footprint updated to refer to this file with zero Z offset, replacing the old 8.5 mm offset. Update U3 footprint from library and ensure any local model offset is reset to zero.
+
+Includes all 12 header positions, including A_PLUS/A_MINUS which are unconnected in current schematic. Carrier mounting-hole geometry is unchanged. Official component shapes reused; colors simplified. Added generic headers are approximate, not vendor-certified CAD. Tested STEP roundtrip: 41 solids.

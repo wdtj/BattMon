@@ -1,0 +1,15 @@
+Adafruit ESP32-S3 Reverse TFT Feather 5691 with generic straight headers
+
+Official Adafruit board/components STEP source:
+https://github.com/adafruit/Adafruit_CAD_Parts/tree/main/5691%20Feather%20ESP32%20S3%20Reverse%20TFT
+Original model copyright Adafruit Industries; retain upstream license terms. Added generic headers are approximate, not vendor-specific mechanical CAD.
+
+Includes 1x16 and 1x12 straight male headers: 2.54 mm pitch, 20.32 mm row spacing, 0.64 mm square pins, 2.54 mm tall black insulators. Pins extend 6 mm below insulator and 3 mm above insulator. Board thickness is official model 1.57 mm. Headers fitted on component side so LCD faces outward. Female carrier sockets are not included.
+
+Origin and XY orientation match BattMon:Adafruit_5691_Reverse_TFT_Feather_DisplayUp. KiCad model offset/rotation zero, scale 1. STEP Y is opposite PCB-editor Y by KiCad convention.
+
+Assumed stack height: insulator bottom z=8.50 mm above carrier PCB top, module component-side PCB face z=11.04 mm, display-side PCB face z=12.61 mm. Header pin tips at z=2.50 mm. This is an illustrative socket-mounted height, not a verified mating stack. Adjust KiCad model Z offset by the difference if using another socket/header combination. No carrier female sockets or mounting hardware modeled.
+
+Official model transformed rigidly: 180 degrees around Y then translated (25.4,-11.43,12.61) mm. 28 pin centers match the header geometry in the display-up footprint. Colors simplified. Tested STEP import/export; 216 solids.
+
+To show on existing PCB: update U4 footprint from library after Drive sync. This does not automatically happen when the library file changes. Check mechanical orientation against actual assembled Feather before manufacture.

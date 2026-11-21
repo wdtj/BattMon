@@ -1,0 +1,13 @@
+Murata 1430430C simplified STEP model
+
+Nominal dimensions from Murata 1400 series datasheet KMP_1400C_B05/B06: a=25.9 mm over terminal exits, b=24.4 mm body diameter, c=14.0 mm body height, d=0.75 mm wire diameter, e=5.5 mm center hole, f=23.4 mm lead spacing. Body dimensions have +/-1.5 mm tolerance; e +/-0.3 mm; lead diameter +/-0.05 mm. Model uses 1.0 mm seating clearance (drawing maximum), giving nominal top height 15.0 mm; allow tolerance for enclosure design. Lead tails extend 9 mm below PCB, representing untrimmed leads.
+
+Origin matches existing BattMon:1430430C_MUR footprint: pin 1 at (0,0), pin 2 at (23.4,0), body center (11.7,0), PCB top z=0. No KiCad transform needed.
+
+Simplified geometry: winding barrel, flange thickness and terminal feet are approximations. No detailed turns or labeling. Not manufacturer-certified production tooling CAD. Verify actual part clearance before fabrication.
+
+Source: https://www.cdiweb.com/datasheets/murata/inductor_1400_series.pdf
+
+Saved model: 3dmodels/1430430C.step
+Footprint model link: ${KIPRJMOD}/3dmodels/1430430C.step
+After synchronization, select L1 in PCB Editor and use Update Footprints from Library to import the model reference. Existing board instances do not automatically acquire library changes. This work does not alter PCB placement or routing.

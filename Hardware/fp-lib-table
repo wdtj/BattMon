@@ -1,0 +1,1 @@
+(fp_lib_table (version 7) (lib (name "BattMon") (type "KiCad") (uri "${KIPRJMOD}/BattMon.pretty") (options "") (descr "Bundled BattMon footprints")))

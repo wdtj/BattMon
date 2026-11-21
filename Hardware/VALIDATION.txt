@@ -1,0 +1,12 @@
+BattMon revision I — 2026-11-14
+KiCad CLI 9.0.2 parses schematic and PDF. ERC: 0 errors, 0 warnings.
+Connectivity: 16 nets / 93 wired schematic pins, independently compared to expected map; includes the two pins of existing battery BT1 (excluded from BOM/PCB).
+Battery positive BT1.1 -> F1.1; F1.2 -> J1.1 on BAT_FUSED; BAT_FUSED feeds D1 and R5. Battery negative BT1.2 -> J1.2 / GND. F1 and holder external at battery positive.
+J7 cable housing: 1 unused, 2 HALL_OUT, 3 GND, 4 5V. Contact field: WM16517-ND, quantity 3, cavities 2/3/4. Housing WM2022-ND quantity 1. No duplicate U2-HOUSING row.
+No-connects: U2 VREF, J6.1, J7.1, U3 ALRT.
+All supplier and footprint fields compared to metadata. All 32 assigned board footprints and model paths retained. External J7 has no carrier PCB footprint.
+LM2575 supply, sensor conversion and ADC circuits otherwise unchanged from revision G.
+Updated PDF visually inspected. Inventory PCB regenerated with current net names; it is unrouted and not for fabrication.
+No hardware tests, final PCB routing, thermal/transient qualification or firmware/app included.
+
+Revision I: connector presentation corrected. J1 battery and PCB connections drawn continuously; J7 and J6 placed inline between sensor OUT and divider/ADC. Same expected 16 nets and 93 wired pins verified after drawing changes. Native supplier fields and all 32 footprints retained. ERC zero errors/warnings; PDF visually inspected.
