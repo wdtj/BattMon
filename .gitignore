@@ -8,3 +8,5 @@
 /.vs/slnx.sqlite
 *.bak
 /Hardware/BattMon-backups
+/battmon_app/android/*.un~
+/battmon_app/android/*.properties~
